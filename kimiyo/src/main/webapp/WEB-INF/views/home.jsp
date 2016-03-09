@@ -3,6 +3,12 @@
 <html>
 <head>
 	<title>Home</title>
+	<script src="<c:url value="/resources/js/jquery-2.2.1.js" />" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function(){
+			// alert('wellcom');
+		});
+	</script>
 </head>
 <body>
 <h1>
