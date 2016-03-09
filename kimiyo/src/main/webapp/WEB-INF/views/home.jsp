@@ -2,6 +2,7 @@
 <%@ page session="false" %>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Home</title>
 	<script src="<c:url value="/resources/js/jquery-2.2.1.js" />" type="text/javascript"></script>
 	<script type="text/javascript">
