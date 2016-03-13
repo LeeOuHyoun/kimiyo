@@ -22,9 +22,8 @@ public class DbSampleController {
 	public String sampleDbAccess(Model model) {
 		logger.info("DB Access Sample start..!");
 		
-		
 		logger.info("DB Access Sample end..!");
-		return "home";
+		return "/sample/sample_db_get";
 	}
 	
 }
