@@ -4,19 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Home</title>
+	<title>get DB</title>
 	<script src="<c:url value="/resources/js/jquery-2.2.1.js" />" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(function(){
-			 alert('wellcom');
+			// alert('wellcom');
 		});
 	</script>
 </head>
 <body>
 <h1>
-	Hello world!  
+	Hello get DB!
 </h1>
-
-<P>  The time on the server is ${serverTime}. </P>
 </body>
 </html>
