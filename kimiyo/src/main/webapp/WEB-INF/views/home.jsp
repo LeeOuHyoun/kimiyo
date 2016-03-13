@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<title>Home</title>
-	<script src="<c:url value="/resources/js/jquery-2.2.1.js" />" type="text/javascript"></script>
+	<script src="<c:url value="/resources/js/common/jquery-2.2.1.js" />" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(function(){
 			 alert('wellcom');
