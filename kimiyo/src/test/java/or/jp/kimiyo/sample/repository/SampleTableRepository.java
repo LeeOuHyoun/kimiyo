@@ -11,4 +11,6 @@ import or.jp.kimiyo.sample.entity.SampleTable;
 public interface SampleTableRepository extends JpaRepository<SampleTable, Integer> {
 
 	List<SampleTable> findAll();
+
+	SampleTable findById(String id);
 }
