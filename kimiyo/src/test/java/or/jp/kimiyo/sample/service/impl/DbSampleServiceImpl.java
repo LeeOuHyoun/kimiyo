@@ -18,6 +18,7 @@ public class DbSampleServiceImpl implements DbSampleService {
 	@Inject
 	SampleTableRepository sampleTableRepository;
 
+	@Override
 	public List<SampleTable> getDbSampleTable() {
 		return this.sampleTableRepository.findAll();
 	}
