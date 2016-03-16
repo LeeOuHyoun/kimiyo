@@ -49,9 +49,7 @@
 		</property>
 	</bean>
 
-	<jpa:repositories base-package="or.jp.kimiyo.repository"
-		entity-manager-factory-ref="entityManagerFactory"
-		factory-class="or.jp.kimiyo.repository.factory.CustomRepositoryFactoryBean" />
+	<jpa:repositories base-package="or.jp.kimiyo.repository" />
 
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
