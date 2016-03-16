@@ -1,4 +1,4 @@
-package or.jp.kimiyo.sample.entity;
+package or.jp.kimiyo.entity;
 
 import java.io.Serializable;
 
@@ -7,8 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "sample_table")
 @NamedQueries({ @NamedQuery(name = "SampleTable.findById", query = "SELECT c FROM SampleTable c WHERE c.id = :id") })
 public class SampleTable implements Serializable {
 	private static final long serialVersionUID = 1L;

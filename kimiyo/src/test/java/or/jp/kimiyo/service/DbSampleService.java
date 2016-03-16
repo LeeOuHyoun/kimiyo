@@ -1,8 +1,8 @@
-package or.jp.kimiyo.sample.service;
+package or.jp.kimiyo.service;
 
 import java.util.List;
 
-import or.jp.kimiyo.sample.entity.SampleTable;
+import or.jp.kimiyo.entity.SampleTable;
 
 public interface DbSampleService {
 
