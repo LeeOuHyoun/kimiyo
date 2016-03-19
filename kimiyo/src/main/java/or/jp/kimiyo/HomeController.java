@@ -14,21 +14,21 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class HomeController {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
+
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
 		logger.info("Welcome home!");
-		
+
 		Date date = new Date();
-		
+		String aaa = "(aaaa)";
 		model.addAttribute("serverTime", date );
-		
+
 		return "home";
 	}
-	
+
 }
