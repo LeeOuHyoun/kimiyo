@@ -25,7 +25,6 @@ public class HomeController {
 		logger.info("Welcome home!");
 
 		Date date = new Date();
-		String aaa = "(aaaa)";
 		model.addAttribute("serverTime", date );
 
 		return "home";
