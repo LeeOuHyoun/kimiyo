@@ -28,17 +28,22 @@
 		<property name="url"
 			value="jdbc:postgresql://localhost:5432/postgres" />
 		<property name="username" value="postgres" />
-		<property name="password" value="postgres" />
+		<property name="password" value="postgresql" />
 	</bean>
 
 	<bean id="entityManagerFactory"
-		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
-		lazy-init="true">
-		<property name="persistenceUnitName" value="kimiyo" />
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="packagesToScan" value="or.jp.kimiyo.entity" />
 		<property name="dataSource" ref="dataSource" />
-		<property name="jpaVendorAdapter">
-			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+		<property name="jpaProperties">
+			<props>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">create</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</prop>
+			</props>
+		</property>
+		<property name="persistenceProvider">
+			<bean class="org.hibernate.jpa.HibernatePersistenceProvider"></bean>
 		</property>
 	</bean>
 
