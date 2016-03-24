@@ -35,6 +35,7 @@ public class DbSampleController {
 		List<SampleTable> resultList = this.sampleTableRepository.findAll();
 
 		logger.info("DB Access Sample end..!");
+		model.addAttribute("resultList", resultList);
 		return "/sample/sample_db_get";
 	}
 

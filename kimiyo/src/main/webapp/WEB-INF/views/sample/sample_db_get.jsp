@@ -16,5 +16,13 @@
 <h1>
 	Hello get DB!
 </h1>
+<p>
+	<c:forEach items="${resultList}" var="result">
+		<div>
+			ID : <c:out value="${result.id}"></c:out> <br/>
+			NAME: <c:out value="${result.name}"></c:out>
+		</div>
+	</c:forEach>
+</p>
 </body>
 </html>
