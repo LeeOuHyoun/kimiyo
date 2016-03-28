@@ -16,13 +16,23 @@
 <h1>
 	Hello get DB!
 </h1>
-<p>
+<div>
+	<div>sample_data</div>
 	<c:forEach items="${resultList}" var="result">
 		<div>
 			ID : <c:out value="${result.id}"></c:out> <br/>
 			NAME: <c:out value="${result.name}"></c:out>
 		</div>
 	</c:forEach>
-</p>
+</div>
+<div>
+	<div>sample2_data</div>
+	<c:forEach items="${resultList}" var="result">
+		<div>
+			ID : <c:out value="${result.id}"></c:out> <br/>
+			NAME: <c:out value="${result.name}"></c:out>
+		</div>
+	</c:forEach>
+</div>
 </body>
 </html>
