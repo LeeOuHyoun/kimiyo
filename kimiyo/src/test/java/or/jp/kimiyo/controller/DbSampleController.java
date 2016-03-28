@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import or.jp.kimiyo.entity.SampleTable;
-import or.jp.kimiyo.repository.SampleTableRepository;
+import or.jp.kimiyo.service.DbSampleService;
 
 /**
  * DB Access Sample Controller Class
@@ -26,13 +26,13 @@ public class DbSampleController {
 	private static final Logger logger = LoggerFactory.getLogger(DbSampleController.class);
 
 	@Inject
-	private SampleTableRepository sampleTableRepository;
+	private DbSampleService dbSampleService;
 
 	@RequestMapping(value = "/sample/dbaccess", method = RequestMethod.GET)
 	public String sampleDbAccess(Model model) {
 		logger.info("DB Access Sample start..!");
 
-		List<SampleTable> resultList = this.sampleTableRepository.findAll();
+		List<SampleTable> resultList = this.dbSampleService.getDbSampleTable();
 
 		logger.info("DB Access Sample end..!");
 		model.addAttribute("resultList", resultList);
