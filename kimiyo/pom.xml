@@ -128,14 +128,15 @@
 		    <version>${slf4j.version}</version>
 		    <scope>runtime</scope>
 		</dependency>
-
+<!--    TODO 後確認
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
         </dependency>
 
-		<!-- TODO -->
+ -->
+ 		<!-- TODO -->
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
