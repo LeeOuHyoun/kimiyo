@@ -20,17 +20,7 @@
 	<div>sample_data</div>
 	<c:forEach items="${resultList}" var="result">
 		<div>
-			ID : <c:out value="${result.id}"></c:out> <br/>
-			NAME: <c:out value="${result.name}"></c:out>
-		</div>
-	</c:forEach>
-</div>
-<div>
-	<div>sample2_data</div>
-	<c:forEach items="${resultList}" var="result">
-		<div>
-			ID : <c:out value="${result.id}"></c:out> <br/>
-			NAME: <c:out value="${result.name}"></c:out>
+			ID : <c:out value="${result.id}"></c:out> / NAME: <c:out value="${result.name}"></c:out>
 		</div>
 	</c:forEach>
 </div>

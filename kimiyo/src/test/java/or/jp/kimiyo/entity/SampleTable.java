@@ -1,32 +1,29 @@
 package or.jp.kimiyo.entity;
 
 import java.io.Serializable;
+import javax.persistence.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
-import javax.persistence.Table;
 
+/**
+ * The persistent class for the sample_table database table.
+ * 
+ */
 @Entity
-@Table(name = "sample_table")
-@NamedQueries({ @NamedQuery(name = "SampleTable.findById", query = "SELECT c FROM SampleTable c WHERE c.id = :id") })
+@Table(name="sample_table")
+@NamedQuery(name="SampleTable.findAll", query="SELECT s FROM SampleTable s")
 public class SampleTable implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name = "id")
 	private String id;
 
-	@Column(name = "name")
 	private String name;
 
 	public SampleTable() {
 	}
 
 	public String getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(String id) {
@@ -34,10 +31,11 @@ public class SampleTable implements Serializable {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
 		this.name = name;
 	}
+
 }

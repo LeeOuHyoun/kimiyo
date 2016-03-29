@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import or.jp.kimiyo.dto.SampleDto;
-import or.jp.kimiyo.entity.Sample2Table;
 import or.jp.kimiyo.entity.SampleTable;
 import or.jp.kimiyo.service.DbSampleService;
 
@@ -44,11 +43,9 @@ public class DbSampleController {
 		logger.info("DB Access Sample start..!");
 
 		List<SampleTable> resultList = this.dbSampleService.getDbSampleTable();
-		List<Sample2Table> resultList2 = this.dbSampleService.getDbSample2Table();
+		model.addAttribute("resultList", resultList);
 
 		logger.info("DB Access Sample end..!");
-		model.addAttribute("resultList", resultList);
-		model.addAttribute("resultList2", resultList2);
 		return "/sample/sample_db_get";
 	}
 
@@ -68,6 +65,10 @@ public class DbSampleController {
 		BeanUtils.copyProperties(dto, entity);
 		// entity登録
 		this.dbSampleService.setSampleDb(entity);
+
+		// データの再取得
+		List<SampleTable> resultList = this.dbSampleService.getDbSampleTable();
+		model.addAttribute("resultList", resultList);
 
 		logger.info("DB Access setSampleDb end..!");
 		return "/sample/sample_db_get";

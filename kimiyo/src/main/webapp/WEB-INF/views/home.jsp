@@ -29,8 +29,8 @@
 <form:form method="post" action="${pageContext.request.contextPath}/sample/setSampleDb">
 	<p/>
 	<div>DB SET SAMPLE</div>
-	<input type="text" id="id" name="id" /><br />
-	<input type="text" id="name" name="name" /><br />
+	ID : <input type="text" id="id" name="id" /><br />
+	NAME : <input type="text" id="name" name="name" /><br />
 	<button id="submit">submit</button>
 </form:form>
 

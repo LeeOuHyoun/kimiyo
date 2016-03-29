@@ -6,9 +6,7 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
-import or.jp.kimiyo.entity.Sample2Table;
 import or.jp.kimiyo.entity.SampleTable;
-import or.jp.kimiyo.repository.Sample2TableRepository;
 import or.jp.kimiyo.repository.SampleTableRepository;
 
 /**
@@ -24,9 +22,6 @@ public class DbSampleService {
 	@Inject
 	private SampleTableRepository sampleTableRepository;
 
-	@Inject
-	private Sample2TableRepository sample2TableRepository;
-
 	/**
 	 * 「sample_table」テーブルからデータ取得
 	 *
@@ -34,15 +29,6 @@ public class DbSampleService {
 	 */
 	public List<SampleTable> getDbSampleTable() {
 		return this.sampleTableRepository.findAll();
-	}
-
-	/**
-	 * 「sample2_table」テーブルからデータ取得
-	 *
-	 * @return
-	 */
-	public List<Sample2Table> getDbSample2Table() {
-		return this.sample2TableRepository.findAll();
 	}
 
 	/**
