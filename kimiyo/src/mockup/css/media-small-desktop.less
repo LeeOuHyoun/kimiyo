@@ -1,0 +1,37 @@
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	html {
+		font-size: 15px;
+	}
+	body.theme-@{index} {
+		.navbar-nav > li > a {
+			&:before {
+				margin-left: -12px;
+			}
+			&:after {
+				margin-right: -12px;
+			}
+		}
+		&.effect-movedown {
+			main {
+				.transform(scale(1.1) rotate3d(1, 0, 0, 40deg) translateY(10%));
+			}
+		}
+		.testimonial-wrap {
+			.item .content {
+				font-size: 1.3rem;
+				span {
+					font-size: 1.4rem;
+				}
+				&:before {
+					font-size: 3rem;
+				}
+			}
+			.carousel-control {
+				font-size: 2rem;
+			}
+		}
+		.navbar-default.transparent-background .navbar-brand {
+			font-size: 1.8rem;
+		}
+	}
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Amber - Read Me</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Instructions for use</h1>
+                <p>First of all, thank you for purchasing this template and I hope you will enjoy it as much I enjoyed making it.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul>
+                    <li><a href="#color-themes">Color themes</a></li>
+                    <li><a href="#slider-images">Change the slider images</a></li>
+                    <li><a href="#animations">Disable animations</a></li>
+                    <li><a href="#static-iamge">Static image banner</a></li>
+                    <li><a href="#portfolio-filters">Change the portfolio filters</a></li>
+                    <li><a href="#portfolio-images">Change the portfolio images</a></li>
+                    <li><a href="#team-images">Change the team images</a></li>
+                    <li><a href="#contact-map">Change marker position on the map</a></li>
+                    <li><a href="#contact-form">Contact form - making it work</a></li>
+                    <li><a href="#icons">Use icons</a></li>
+                    <li><a href="#grunt">Grunt file</a></li>
+                    <li><a href="#more-questions">More questions?</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="color-themes">Color themes</h2>
+                <p>This template was thought with 5 color themes in mind but you can add your own easly using the LESS file.</p>
+                <p>The LESS file contains at the begining the default colors used but also in <strong>themeDefs</strong> mixins there are the other color themes.</p>
+                <p>For a smaller css file I suggest deleteing the themeDefs not used and change <strong>@numberOfThemes</strong> variable to the number of themes you want.</p>
+                <p>For example you like the blue color theme so remove themeDefs 1,2,4 and 5 and rename the themeDefs(3) to themeDefs(1) and compile the LESS file again.</p>
+                <code>
+                    .themeDefs(1) {<br />
+                    @dark-color: #7946bd;<br />
+                    @light-color: #927CBF;<br />
+                    @danger-color: #D94A56;<br />
+                    @success-color: #CF89B1;<br />
+                    @info-color: #BF99AE;<br />
+                    @warning-color: #F2DA91;<br />
+                    @background-color: #F6F6F6;<br />
+                    @slider-overlay-color: #927CBF;<br />
+                    }
+                </code>
+                <p>If you don't want to recompile the LESS file you can change the class on <strong>body</strong> with <strong>.theme-3</strong> class.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="slider-images">Change the slider images</h2>
+                <p>To change the slider images replace the <strong>background-image: url()</strong> from <strong>.top-slider</strong> items, with the link to your image</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="animations">Disable animations</h2>
+                <p>To disable the animations, remove from <strong>main.js</strong> file the function <strong>initElementTransitions</strong>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="static-iamge">Static image banner</h2>
+                <p>To disable the slider and use only on image as a static banner you need to add to <strong>body</strong> the class <strong>.no-slider</strong>.</p>
+                <p>Keep only one item in <strong>.top-slider</strong> and remove the links for navigation that have the class <strong>.carousel-control</strong></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="portfolio-filters">Change the portfolio filters</h2>
+                <p>Every item in portfolio has a class for example <strong>.apps</strong> which is the same as the the <strong>data-filter</strong> attribute from the buttons in <strong>.portfolio-filters</strong>.</p>
+                <p>An items can have more classes that match multiple filters.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="portfolio-images">Change the portfolio images</h2>
+                <p>Every item from portfolio uses <strong>data-image</strong> attribute for loading the image on the main screen.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="team-images">Change the team images</h2>
+                <p>Every team-member uses a img for loading the images. Edit this element to load the desired image.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="contact-map">Change marker position on the map</h2>
+                <p>The map center can be modified from <strong>main.js</strong> file in <strong>initMap()</strong> function.</p>
+                <p>For centering the map modify <strong>address</strong> under map.</p>
+                <p>For chaning the map marker modify <strong>address</strong> under marker.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="contact-form">Contact form - making it work</h2>
+                <p>Contact form is sent using an Ajax call to <strong>contact.php</strong> file.</p>
+                <p>Modify <code>$to = 'Your Name <name@example.com>';</code> with your email address.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="icons">Use icons</h2>
+                <p>This theme uses the Entypo icon pack.</p>
+                <p>In the file <strong>demo-icons.html</strong> you will find all the icons available to use and the class for them.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="grunt">Grunt</h2>
+                <p>The grunt file has included a less compile task that also minifies and generates a source map and a JS minifier.</p>
+                <p>I suggest to use them for production sites.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="more-questions">More questions?</h2>
+                <p>If you have other questions that are not covered in this instructions feel free to use the contact from the site and I will answer to you as soon as possible.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

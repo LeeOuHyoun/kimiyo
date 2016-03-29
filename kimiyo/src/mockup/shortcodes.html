@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Amber</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body class="theme-4 no-perspective" data-spy="scroll" data-target=".main-nav" data-offset="60">
+<section id="theme-swatch">
+    <ul class="colors">
+        <li><a href="#" class="theme-1 color-swatch"></a></li>
+        <li><a href="#" class="theme-2 color-swatch"></a> </li>
+        <li><a href="#" class="theme-3 color-swatch"></a></li>
+        <li><a href="#" class="active theme-4 color-swatch"></a></li>
+        <li><a href="#" class="theme-5 color-swatch"></a></li>
+    </ul>
+</section>
+<div class="login-modal">
+    <div class="login-content">
+        <div>
+            <button class="login-close btn btn-primary entyp-cancel-1"></button>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#login" role="tab" data-toggle="tab">Login</a></li>
+                <li><a href="#register" role="tab" data-toggle="tab">Register</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active fade in" id="login">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="email" name="login-email" placeholder="Email" class="form-control"/>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" name="login-password" placeholder="Password" class="form-control"/>
+                        </div>
+                        <div class="input-line">
+                            <button type="submit" class="btn btn-success btn-icon entyp-login-1">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="register">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" name="register-name" placeholder="Name" class="form-control"/>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="register-email" placeholder="Email" class="form-control"/>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" name="register-password" placeholder="Password" class="form-control"/>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" name="register-passworda" placeholder="Confirm Password" class="form-control"/>
+                        </div>
+                        <div class="input-line">
+                            <button type="submit" class="btn btn-success btn-icon entyp-users-1">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="background"></div>
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button class="open-login mobile-login"><i class="entyp-user-1"></i></button>
+                <a class="navbar-brand" href="#home"><i class="entyp-feather"></i> Amber</a>
+            </div>
+            <div class="collapse navbar-collapse main-nav" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">
+                            <div class="big">Home</div>
+                            <hr/>
+                            <div class="small">Summary</div>
+                        </a>
+                        <ul>
+                            <li><a href="#">Dropdown #1</a></li>
+                            <li><a href="#">Dropdown #2</a></li>
+                            <li>
+                                <a href="#">Submenu #3</a>
+                                <ul>
+                                    <li><a href="#">Dropdown #3.1</a></li>
+                                    <li><a href="#">Dropdown #3.2</a></li>
+                                    <li><a href="#">Dropdown #3.3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dropdown #4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">
+                            <div class="big">Portfolio</div>
+                            <hr/>
+                            <div class="small">Latest work</div>
+                        </a>
+                        <ul>
+                            <li><a href="portfolio-alternate.html">Portfolio Alternate</a></li>
+                            <li><a href="portfolio-single.html">Portfolio Item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            <div class="big">Blog</div>
+                            <hr/>
+                            <div class="small">Latest News</div>
+                        </a>
+                        <ul>
+                            <li><a href="blog-single.html">Blog Post</a></li>
+                            <li><a href="blog-2-col.html">Blog 2 Columns</a></li>
+                            <li><a href="blog-no-sidebar.html">Blog Post Without Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <div class="big">About Us</div>
+                            <hr/>
+                            <div class="small">Who We Are</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <div class="big">Contact</div>
+                            <hr/>
+                            <div class="small">Find Us</div>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="shortcodes.html">
+                            <div class="big">Shortcodes</div>
+                            <hr/>
+                            <div class="small">Elements</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="open-login ignore init-login-popover">
+                            <div class="big"><i class="entyp-user-1"></i> Login</div>
+                            <hr/>
+                            <div class="small">or Register</div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="input-group search-group">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="Search..." name="s">
+                                <input type="submit" class="hidden" value="submit"/>
+                                    <span class="input-group-btn">
+                                        <button class="btn" type="button"><i class="entyp-search-1"></i></button>
+                                    </span>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<main role="main" class="main-container">
+    <section class="line elements-container" id="common">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="title-icon">
+                        <i class="entyp-eye-1"></i>
+                    </div>
+                    <h1>Icons</h1>
+                </div>
+                <div class="col-xs-12">
+                    <div class="shortcodes-set">
+                        <div class="icon-group">
+                        <span class="amber-icon sm-icon">
+                            <i class="entyp-basket-1"></i>
+                        </span>
+                        <span class="amber-icon sm-icon alternate-3">
+                            <i class="entyp-lamp"></i>
+                        </span>
+                        <span class="amber-icon sm-icon alternate">
+                            <i class="entyp-user-1"></i>
+                        </span>
+                        <span class="amber-icon sm-icon alternate-2">
+                            <i class="entyp-feather"></i>
+                        </span>
+                        <span class="amber-icon sm-icon dark">
+                            <i class="entyp-thumbs-up-1"></i>
+                        </span>
+                        <span class="amber-icon sm-icon ">
+                            <i class="entyp-basket-1"></i>
+                        </span>
+                        <span class="amber-icon sm-icon alternate-3">
+                            <i class="entyp-lamp"></i>
+                        </span>
+                        <span class="amber-icon sm-icon alternate">
+                            <i class="entyp-user-1"></i>
+                        </span>
+                        <span class="amber-icon sm-icon alternate-2">
+                            <i class="entyp-feather"></i>
+                        </span>
+                        <span class="amber-icon sm-icon dark">
+                            <i class="entyp-thumbs-up-1"></i>
+                        </span>
+                        </div>
+                        <div class="icon-group">
+                        <span class="amber-icon md-icon">
+                            <i class="entyp-basket-1"></i>
+                        </span>
+                        <span class="amber-icon md-icon alternate-3">
+                            <i class="entyp-lamp"></i>
+                        </span>
+                        <span class="amber-icon md-icon alternate">
+                            <i class="entyp-user-1"></i>
+                        </span>
+                        <span class="amber-icon md-icon alternate-2">
+                            <i class="entyp-feather"></i>
+                        </span>
+                        <span class="amber-icon md-icon dark">
+                            <i class="entyp-thumbs-up-1"></i>
+                        </span>
+                        <span class="amber-icon md-icon">
+                            <i class="entyp-basket-1"></i>
+                        </span>
+                        <span class="amber-icon md-icon alternate-3">
+                            <i class="entyp-lamp"></i>
+                        </span>
+                        <span class="amber-icon md-icon alternate">
+                            <i class="entyp-user-1"></i>
+                        </span>
+                        <span class="amber-icon md-icon alternate-2">
+                            <i class="entyp-feather"></i>
+                        </span>
+                        <span class="amber-icon md-icon dark">
+                            <i class="entyp-thumbs-up-1"></i>
+                        </span>
+                        </div>
+                        <div class="icon-group">
+                        <span class="amber-icon sm-icon empty-icon">
+                            <i class="entyp-basket-1"></i>
+                        </span>
+                        <span class="amber-icon sm-icon empty-icon alternate-3">
+                            <i class="entyp-lamp"></i>
+                        </span>
+                        <span class="amber-icon sm-icon empty-icon alternate">
+                            <i class="entyp-user-1"></i>
+                        </span>
+                        <span class="amber-icon sm-icon empty-icon alternate-2">
+                            <i class="entyp-feather"></i>
+                        </span>
+                        <span class="amber-icon sm-icon empty-icon dark">
+                            <i class="entyp-thumbs-up-1"></i>
+                        </span>
+                        <span class="amber-icon sm-icon fill-icon">
+                            <i class="entyp-basket-1"></i>
+                        </span>
+                        <span class="amber-icon sm-icon fill-icon alternate-3">
+                            <i class="entyp-lamp"></i>
+                        </span>
+                        <span class="amber-icon sm-icon fill-icon alternate">
+                            <i class="entyp-user-1"></i>
+                        </span>
+                        <span class="amber-icon sm-icon fill-icon alternate-2">
+                            <i class="entyp-feather"></i>
+                        </span>
+                        <span class="amber-icon sm-icon fill-icon dark">
+                            <i class="entyp-thumbs-up-1"></i>
+                        </span>
+                        </div>
+                        <div class="icon-group">
+                        <span class="amber-icon md-icon empty-icon">
+                            <i class="entyp-basket-1"></i>
+                        </span>
+                        <span class="amber-icon md-icon empty-icon alternate-3">
+                            <i class="entyp-lamp"></i>
+                        </span>
+                        <span class="amber-icon md-icon empty-icon alternate">
+                            <i class="entyp-user-1"></i>
+                        </span>
+                        <span class="amber-icon md-icon empty-icon alternate-2">
+                            <i class="entyp-feather"></i>
+                        </span>
+                        <span class="amber-icon md-icon empty-icon dark">
+                            <i class="entyp-thumbs-up-1"></i>
+                        </span>
+                        <span class="amber-icon md-icon fill-icon">
+                            <i class="entyp-basket-1"></i>
+                        </span>
+                        <span class="amber-icon md-icon fill-icon alternate-3">
+                            <i class="entyp-lamp"></i>
+                        </span>
+                        <span class="amber-icon md-icon fill-icon alternate">
+                            <i class="entyp-user-1"></i>
+                        </span>
+                        <span class="amber-icon md-icon fill-icon alternate-2">
+                            <i class="entyp-feather"></i>
+                        </span>
+                        <span class="amber-icon md-icon fill-icon dark">
+                            <i class="entyp-thumbs-up-1"></i>
+                        </span>
+                        </div>
+                        <div class="icon-group">
+                        <span class="amber-icon lg-icon empty-icon">
+                            <i class="entyp-basket-1"></i>
+                        </span>
+                        <span class="amber-icon lg-icon empty-icon alternate-3">
+                            <i class="entyp-lamp"></i>
+                        </span>
+                        <span class="amber-icon lg-icon empty-icon alternate">
+                            <i class="entyp-user-1"></i>
+                        </span>
+                        <span class="amber-icon lg-icon empty-icon alternate-2">
+                            <i class="entyp-feather"></i>
+                        </span>
+                        <span class="amber-icon lg-icon empty-icon dark">
+                            <i class="entyp-thumbs-up-1"></i>
+                        </span>
+                        <span class="amber-icon lg-icon fill-icon">
+                            <i class="entyp-basket-1"></i>
+                        </span>
+                        <span class="amber-icon lg-icon fill-icon alternate-3">
+                            <i class="entyp-lamp"></i>
+                        </span>
+                        <span class="amber-icon lg-icon fill-icon alternate">
+                            <i class="entyp-user-1"></i>
+                        </span>
+                        <span class="amber-icon lg-icon fill-icon alternate-2">
+                            <i class="entyp-feather"></i>
+                        </span>
+                        <span class="amber-icon lg-icon fill-icon dark">
+                            <i class="entyp-thumbs-up-1"></i>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="title-icon">
+                        <i class="entyp-eye-1"></i>
+                    </div>
+                    <h1>Buttons</h1>
+                </div>
+                <div class="col-xs-12">
+                    <div class="shortcodes-set">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-primary btn-xs">Primary</button>
+                            <button type="button" class="btn btn-success btn-xs">Success</button>
+                            <button type="button" class="btn btn-info btn-xs">Info</button>
+                            <button type="button" class="btn btn-warning btn-xs">Warning</button>
+                            <button type="button" class="btn btn-danger btn-xs">Danger</button>
+                        </div>
+                        <div class="button-group">
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                        </div>
+                        <div class="button-group">
+                            <button type="button" class="btn btn-primary btn-lg">Primary</button>
+                            <button type="button" class="btn btn-success btn-lg">Success</button>
+                            <button type="button" class="btn btn-info btn-lg">Info</button>
+                            <button type="button" class="btn btn-warning btn-lg">Warning</button>
+                            <button type="button" class="btn btn-danger btn-lg">Danger</button>
+                        </div>
+                        <div class="button-group">
+                            <button type="button" class="btn btn-primary btn-icon entyp-star-1">Primary</button>
+                            <button type="button" class="btn btn-success btn-icon entyp-cog-1">Success</button>
+                            <button type="button" class="btn btn-info btn-icon entyp-share">Info</button>
+                            <button type="button" class="btn btn-warning btn-icon entyp-attention-1">Warning</button>
+                            <button type="button" class="btn btn-danger btn-icon entyp-left-circled-1">Danger</button>
+                        </div>
+                        <div class="button-group">
+                            <button type="button" class="btn btn-primary btn-empty">Primary</button>
+                            <button type="button" class="btn btn-success btn-empty">Success</button>
+                            <button type="button" class="btn btn-info btn-empty">Info</button>
+                            <button type="button" class="btn btn-warning btn-empty">Warning</button>
+                            <button type="button" class="btn btn-danger btn-empty">Danger</button>
+                        </div>
+                        <div class="button-group">
+                            <button type="button" class="btn btn-primary btn-empty entyp-star-1">Primary</button>
+                            <button type="button" class="btn btn-success btn-empty entyp-cog-1">Success</button>
+                            <button type="button" class="btn btn-info btn-empty entyp-share">Info</button>
+                            <button type="button" class="btn btn-warning btn-empty entyp-attention-1">Warning</button>
+                            <button type="button" class="btn btn-danger btn-empty entyp-left-circled-1">Danger</button>
+                        </div>
+                        <div class="button-group">
+                            <div class="btn-group primary">
+                                <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group primary">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group primary">
+                                <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <div class="btn-group primary">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    Primary <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group success">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                    Success <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group info">
+                                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                    Info <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group warning">
+                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                    Warning <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group danger">
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                    Danger <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="title-icon">
+                            <i class="entyp-eye-1"></i>
+                        </div>
+                        <h1>Tabs</h1>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="shortcodes-set">
+                            <div class="tabs">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#first" data-toggle="tab">First</a></li>
+                                    <li><a href="#second" data-toggle="tab">Second</a></li>
+                                    <li><a href="#third" data-toggle="tab">Third</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="first">
+                                        Tiramisu soufflé sesame snaps. Powder liquorice icing bonbon.
+                                        Unerdwear.com pastry unerdwear.com jelly croissant tootsie roll.
+                                        Dragée pudding chocolate cake sweet caramels.
+                                        Chupa chups sugar plum jelly ice cream fruitcake.
+                                        Donut jelly beans sweet roll. Chocolate bar lemon drops
+                                        donut soufflé. Lemon drops sesame snaps pastry liquorice
+                                        liquorice cookie topping.
+                                    </div>
+                                    <div class="tab-pane" id="second">
+                                        Cookie bonbon candy apple pie danish. Gummi bears biscuit pastry
+                                        wafer gingerbread cheesecake liquorice oat cake. Topping chocolate
+                                        cake caramels lemon drops marzipan sugar plum jelly beans gummies.
+                                        Gingerbread sweet marzipan cookie marshmallow. Ice cream jelly-o cake.
+                                        Jelly beans danish danish brownie caramels ice cream carrot cake cupcake.
+                                        Caramels croissant jelly sweet applicake. Soufflé lollipop chocolate
+                                        bar applicake unerdwear.com.
+                                    </div>
+                                    <div class="tab-pane" id="third">
+                                        Marshmallow apple pie sugar plum bonbon fruitcake tart
+                                        halvah sesame snaps unerdwear.com. Tart pudding cookie
+                                        gingerbread topping carrot cake. Dessert jujubes carrot
+                                        cake dessert sesame snaps.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs light">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#info-first" data-toggle="tab">First</a></li>
+                                    <li><a href="#info-second" data-toggle="tab">Second</a></li>
+                                    <li><a href="#info-third" data-toggle="tab">Third</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="info-first">
+                                        Tiramisu soufflé sesame snaps. Powder liquorice icing bonbon.
+                                        Unerdwear.com pastry unerdwear.com jelly croissant tootsie roll.
+                                        Dragée pudding chocolate cake sweet caramels.
+                                        Chupa chups sugar plum jelly ice cream fruitcake.
+                                        Donut jelly beans sweet roll. Chocolate bar lemon drops
+                                        donut soufflé. Lemon drops sesame snaps pastry liquorice
+                                        liquorice cookie topping.
+                                    </div>
+                                    <div class="tab-pane" id="info-second">
+                                        Cookie bonbon candy apple pie danish. Gummi bears biscuit pastry
+                                        wafer gingerbread cheesecake liquorice oat cake. Topping chocolate
+                                        cake caramels lemon drops marzipan sugar plum jelly beans gummies.
+                                        Gingerbread sweet marzipan cookie marshmallow. Ice cream jelly-o cake.
+                                        Jelly beans danish danish brownie caramels ice cream carrot cake cupcake.
+                                        Caramels croissant jelly sweet applicake. Soufflé lollipop chocolate
+                                        bar applicake unerdwear.com.
+                                    </div>
+                                    <div class="tab-pane" id="info-third">
+                                        Marshmallow apple pie sugar plum bonbon fruitcake tart
+                                        halvah sesame snaps unerdwear.com. Tart pudding cookie
+                                        gingerbread topping carrot cake. Dessert jujubes carrot
+                                        cake dessert sesame snaps.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="title-icon">
+                            <i class="entyp-eye-1"></i>
+                        </div>
+                        <h1>Accordion</h1>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="shortcodes-set">
+                            <div class="panel-group toggles" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse-one">
+                                                Tiramisu soufflé sesame snaps.
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse-one" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            Cookie bonbon candy apple pie danish. Gummi bears
+                                            biscuit pastry wafer gingerbread cheesecake liquorice oat cake.
+                                            Topping chocolate cake caramels lemon drops marzipan sugar plum
+                                            jelly beans gummies. Gingerbread sweet marzipan cookie marshmallow.
+                                            Ice cream jelly-o cake. Jelly beans danish danish brownie caramels
+                                            ice cream carrot cake cupcake. Caramels croissant jelly sweet applicake.
+                                            Soufflé lollipop chocolate bar applicake unerdwear.com. Tart tiramisu
+                                            chocolate cake biscuit powder sugar plum. Macaroon bear claw pastry
+                                            marzipan jujubes applicake candy canes.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse-two" class="collapsed">
+                                                Marshmallow apple pie sugar plum.
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse-two" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Marshmallow apple pie sugar plum bonbon fruitcake tart
+                                            halvah sesame snaps unerdwear.com. Tart pudding cookie gingerbread
+                                            topping carrot cake. Dessert jujubes carrot cake dessert sesame
+                                            snaps. Tootsie roll lemon drops lemon drops chocolate marshmallow.
+                                            Croissant jujubes ice cream pudding carrot cake caramels croissant
+                                            icing muffin. Sesame snaps macaroon chocolate bar candy canes cupcake
+                                            sweet roll tootsie roll. Marzipan liquorice toffee cake. Macaroon cookie
+                                            biscuit unerdwear.com. Fruitcake applicake cheesecake icing. Carrot cake
+                                            sesame snaps sweet halvah cotton candy apple pie. Cupcake wafer brownie
+                                            jujubes.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse-three" class="collapsed">
+                                                Cookie gingerbread tiramisu.
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse-three" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Cookie gingerbread tiramisu. Bonbon cotton candy jelly
+                                            soufflé candy muffin. Toffee jelly oat cake unerdwear.com cake.
+                                            Chocolate jelly apple pie donut sweet roll oat cake donut dragée
+                                            ice cream. Danish marshmallow donut lollipop. Chocolate bar tiramisu
+                                            chocolate bar croissant pie sweet jelly-o oat cake applicake.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse-four" class="collapsed">
+                                                Jelly beans jelly-o caramels.
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse-four" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Jelly beans jelly-o caramels applicake cupcake icing pudding.
+                                            Chocolate cake wafer pastry marshmallow croissant icing cotton
+                                            candy tiramisu. Topping tart unerdwear.com pie pudding liquorice.
+                                            Sweet dessert cookie macaroon. Cake liquorice wafer. Halvah muffin
+                                            applicake sweet caramels liquorice donut cookie icing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="title-icon">
+                            <i class="entyp-eye-1"></i>
+                        </div>
+                        <h1>Blockquotes</h1>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="shortcodes-set text-editor">
+                            <blockquote>
+                                Lollipop tiramisu tootsie roll jujubes I love I love wafer I love.
+                                Candy oat cake muffin. Chocolate bar donut gingerbread I love chupa chups sesame snaps.
+                                Marshmallow pie donut apple pie tiramisu bonbon chocolate bar.
+                                Sesame snaps muffin dragée sesame snaps ice cream toffee.
+                                Brownie bear claw danish I love carrot cake apple pie unerdwear.com fruitcak
+                            </blockquote>
+                            <blockquote class="dark">
+                                Lollipop tiramisu tootsie roll jujubes I love I love wafer I love.
+                                Candy oat cake muffin. Chocolate bar donut gingerbread I love chupa chups sesame snaps.
+                                Marshmallow pie donut apple pie tiramisu bonbon chocolate bar.
+                                Sesame snaps muffin dragée sesame snaps ice cream toffee.
+                                Brownie bear claw danish I love carrot cake apple pie unerdwear.com fruitcak
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="title-icon">
+                            <i class="entyp-user-1"></i>
+                        </div>
+                        <h1>Pricing Tables</h1>
+                    </div>
+                    <div class="shortcodes-set">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="pricing-box first">
+                                    <header>Bronze</header>
+                                    <div class="price">
+                                        <h3><span class="symbol">$</span>10</h3>
+                                        <h4>per month</h4>
+                                    </div>
+                                    <ul class="item-list">
+                                        <li><strong>10GB</strong> Storage</li>
+                                        <li><strong>15</strong> Email Addresses</li>
+                                        <li><strong>5</strong> Domains</li>
+                                        <li><strong>Endless</strong> Happiness</li>
+                                    </ul>
+                                    <button type="button" class="hidden-sm btn btn-success btn-icon entyp-thumbs-up-1">Sign Up</button>
+                                    <button type="button" class="hidden-lg hidden-md hidden-xs btn btn-success entyp-thumbs-up-1 btn-xs">Sign Up</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="pricing-box">
+                                    <header>Silver</header>
+                                    <div class="price">
+                                        <h3><span class="symbol">$</span>30</h3>
+                                        <h4>per month</h4>
+                                    </div>
+                                    <ul class="item-list">
+                                        <li><strong>50GB</strong> Storage</li>
+                                        <li><strong>30</strong> Email Addresses</li>
+                                        <li><strong>10</strong> Domains</li>
+                                        <li><strong>Endless</strong> Happiness</li>
+                                    </ul>
+                                    <button type="button" class="hidden-sm btn btn-success btn-icon entyp-thumbs-up-1">Sign Up</button>
+                                    <button type="button" class="hidden-lg hidden-md hidden-xs btn btn-success entyp-thumbs-up-1 btn-xs">Sign Up</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="pricing-box">
+                                    <header>Gold</header>
+                                    <div class="price">
+                                        <h3><span class="symbol">$</span>80</h3>
+                                        <h4>per year</h4>
+                                    </div>
+                                    <ul class="item-list">
+                                        <li><strong>100GB</strong> Storage</li>
+                                        <li><strong>50</strong> Email Addresses</li>
+                                        <li><strong>15</strong> Domains</li>
+                                        <li><strong>Endless</strong> Happiness</li>
+                                    </ul>
+                                    <button type="button" class="hidden-sm btn btn-success btn-icon entyp-thumbs-up-1">Sign Up</button>
+                                    <button type="button" class="hidden-lg hidden-md hidden-xs btn btn-success entyp-thumbs-up-1 btn-xs">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="title-icon">
+                            <i class="entyp-eye-1"></i>
+                        </div>
+                        <h1>Carousel</h1>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="shortcodes-set">
+                            <div class="common-slider-wrap">
+                                <a class="left carousel-control hidden-xs" data-slide="prev"><i class="entyp-left-open-big control-icon"></i></a>
+                                <a class="right carousel-control hidden-xs" data-slide="next"><i class="entyp-right-open-big control-icon"></i></a>
+                                <div class="common-slider">
+                                    <div class="item">
+                                        <figure>
+                                            <img src="content/portfolio14.jpg" alt=""/>
+                                        </figure>
+                                    </div>
+                                    <div class="item">
+                                        <figure>
+                                            <img src="content/portfolio11.jpg" alt=""/>
+                                        </figure>
+                                    </div>
+                                    <div class="item">
+                                        <figure>
+                                            <img src="content/portfolio12.jpg" alt=""/>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="title-icon">
+                            <i class="entyp-eye-1"></i>
+                        </div>
+                        <h1>Progress Bars</h1>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="shortcodes-set">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">40%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 0%">20%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%">60%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="title-icon">
+                            <i class="entyp-eye-1"></i>
+                        </div>
+                        <h1>Pagination</h1>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="shortcodes-set">
+                            <div class="row">
+                                <div class="col-sm-4 text-center">
+                                    <ul class="pagination dark">
+                                        <li><a href="#"><i class="entyp-left-open-1"></i></a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#"><i class="entyp-right-open-1"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <ul class="pagination">
+                                        <li><a href="#"><i class="entyp-left-open-1"></i></a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#"><i class="entyp-right-open-1"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <ul class="pagination light">
+                                        <li><a href="#"><i class="entyp-left-open-1"></i></a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#"><i class="entyp-right-open-1"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="title-icon">
+                            <i class="entyp-eye-1"></i>
+                        </div>
+                        <h1>Forms</h1>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="shortcodes-set">
+                            <form role="form">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Text input"/>
+                                        <input type="email" class="form-control" placeholder="Email input"/>
+                                        <div class="amber-select">
+                                            <select class="select">
+                                                <option value="-1" selected>Select Box</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Textarea"></textarea>
+                                        <div class="amber-checkbox">
+                                            <input type="hidden" name="checkbox1" value="false"/>
+                                            <a href="#">
+                                                <i class="entyp-check-1"></i>
+                                            </a>
+                                            Checkbox 1
+                                        </div>
+                                        <div class="amber-checkbox">
+                                            <input type="hidden" name="checkbox1" value="true"/>
+                                            <a href="#" class="checked">
+                                                <i class="entyp-check-1"></i>
+                                            </a>
+                                            Checkbox 2
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="title-icon">
+                            <i class="entyp-eye-1"></i>
+                        </div>
+                        <h1>Alerts</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="shortcodes-set">
+                            <div class="alert alert-success alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="entyp-cancel-1"></i></button>
+                                This is an alert
+                            </div>
+                            <div class="alert alert-info alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="entyp-cancel-1"></i></button>
+                                This is an alert
+                            </div>
+                            <div class="alert alert-warning alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="entyp-cancel-1"></i></button>
+                                This is an alert
+                            </div>
+                            <div class="alert alert-danger alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="entyp-cancel-1"></i></button>
+                                This is an alert
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="footer-widget">
+                        <h2>Latest Posts</h2>
+                        <div class="widget-content latest-post">
+                            <ul>
+                                <li>
+                                    <h3><a href="blog-single.html">Jelly I love apple pie tart tootsie roll tiramisu.</a></h3>
+                                    <p> I love I love cookie cotton candy. Danish candy muffin lollipop.</p>
+                                    <span class="date">August 25</span>
+                                </li>
+                                <li>
+                                    <h3><a href="blog-single.html">Jelly I love apple pie tart tootsie roll tiramisu.</a></h3>
+                                    <p> I love I love cookie cotton candy. Danish candy muffin lollipop.</p>
+                                    <span class="date">August 25</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer-widget">
+                        <h2>Contact</h2>
+                        <div class="widget-content">
+                            <address>
+                                350 5th Ave, New York,<br/> NY 10118, United States
+                            </address>
+                            <address>
+                                <strong>Phone: 0500 - 9876542</strong> <br/>
+                                <strong>E-mail: emailme@amber.com</strong>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer-widget">
+                        <h2>Instagram</h2>
+                        <div class="widget-content instagram">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-6">
+                                    <a href="#"><img src="content/instagram01.jpg" alt=""/></a>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <a href="#"><img src="content/instagram02.jpg" alt=""/></a>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <a href="#"><img src="content/instagram03.jpg" alt=""/></a>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <a href="#"><img src="content/instagram04.jpg" alt=""/></a>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <a href="#"><img src="content/instagram05.jpg" alt=""/></a>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <a href="#"><img src="content/instagram06.jpg" alt=""/></a>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <a href="#"><img src="content/instagram07.jpg" alt=""/></a>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <a href="#"><img src="content/instagram08.jpg" alt=""/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer-widget">
+                        <h2>Share</h2>
+                        <div class="footer-info text-right">
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="entyp-twitter-1"></i></a></li>
+                                <li><a href="#"><i class="entyp-facebook-1"></i></a></li>
+                                <li><a href="#"><i class="entyp-gplus-1"></i></a></li>
+                                <li><a href="#"><i class="entyp-pinterest"></i></a></li>
+                                <li><a href="#"><i class="entyp-dribbble-1"></i></a></li>
+                            </ul>
+                        </div>
+                        <h2>Subscribe</h2>
+                        <form role="form" class="newsletter">
+                            <input type="email" name="subscribe-email" id="subscribe-email" class="form-control"/>
+                            <button type="submit" class="btn btn-primary btn-empty btn-xs entyp-right-bold"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+<script src="js/vendor/jquery-1.11.0.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+<script src="js/vendor/gmap3.min.js"></script>
+<script src="js/vendor/jquery.bxslider.min.js"></script>
+<script src="js/vendor/jquery.isotope.min.js"></script>
+<script src="js/vendor/jquery.isotope.perfectmasonry.js"></script>
+<script src="js/vendor/jquery.hoverdir.js"></script>
+<script src="js/vendor/jquery.inview.min.js"></script>
+<script src="js/vendor/jquery.cookie.js"></script>
+<script src="js/vendor/jquery.selectric.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
