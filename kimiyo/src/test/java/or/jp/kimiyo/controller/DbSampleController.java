@@ -39,7 +39,7 @@ public class DbSampleController {
 		logger.info("DB Access Sample end..!");
 		model.addAttribute("resultList", resultList);
 		model.addAttribute("resultList2", resultList2);
-		return "/sample/sample_db_get";
+		return "/sample/sample_db_get2";
 	}
 
 }
