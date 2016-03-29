@@ -45,5 +45,13 @@ public class DbSampleService {
 		return this.sample2TableRepository.findAll();
 	}
 
+	/**
+	 * 「sample_table」テーブルにデータ登録
+	 *
+	 * @param entity
+	 */
+	public void setSampleDb(SampleTable entity) {
+		this.sampleTableRepository.save(entity);
+	}
 
 }

@@ -1,5 +1,7 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ page session="false" %>
 <html>
 <head>
@@ -10,6 +12,9 @@
 	<script type="text/javascript">
 		$(function(){
 			 //alert('wellcom');
+			$("#submitBtn").on("click", function(){
+				//$("#sampleForm").submit();
+			});
 		});
 	</script>
 </head>
@@ -20,5 +25,14 @@
 
 <P>  The time on the server is ${serverTime}. </P>
 <p><a href="<c:url value='/sample/dbaccess' />">get db</a></p>
+
+<form:form method="post" action="${pageContext.request.contextPath}/sample/setSampleDb">
+	<p/>
+	<div>DB SET SAMPLE</div>
+	<input type="text" id="id" name="id" /><br />
+	<input type="text" id="name" name="name" /><br />
+	<button id="submit">submit</button>
+</form:form>
+
 </body>
 </html>
