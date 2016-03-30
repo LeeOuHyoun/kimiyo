@@ -26,7 +26,8 @@
 <P>  The time on the server is ${serverTime}. </P>
 <p><a href="<c:url value='/sample/dbaccess' />">get db</a></p>
 
-<form:form method="post" action="${pageContext.request.contextPath}/sample/setSampleDb">
+<%-- <form:form method="post" action="${pageContext.request.contextPath}/sample/setSampleDb"> --%>
+<form:form method="post" action="${pageContext.request.contextPath}/sample/getDbSampleOnNativeQuery">
 	<p/>
 	<div>DB SET SAMPLE</div>
 	ID : <input type="text" id="id" name="id" /><br />

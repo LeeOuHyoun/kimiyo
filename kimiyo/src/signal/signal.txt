@@ -5,8 +5,11 @@
 ・slf4j
 ・logback
 ・JPA(Java Persistence Api)
+・JPA - Entity
+・JPA - createNativeQuery
 ・ER Master
 ・interface
+・
 ・
 
 ===============================================================

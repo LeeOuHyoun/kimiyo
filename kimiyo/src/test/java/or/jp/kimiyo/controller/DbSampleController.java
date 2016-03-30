@@ -73,4 +73,21 @@ public class DbSampleController {
 		logger.info("DB Access setSampleDb end..!");
 		return "/sample/sample_db_get";
 	}
+
+	/**
+	 *
+	 * @param dto
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value = "/getDbSampleOnNativeQuery", method = RequestMethod.POST)
+	public String getDbSampleOnNativeQuery(@ModelAttribute SampleDto dto, Model model) {
+		logger.info("DB Access setSampleDb start..!");
+		// データの再取得
+		SampleTable result = this.dbSampleService.getDbSampleOnNativeQuery(dto.getId());
+		model.addAttribute("result", result);
+
+		logger.info("DB Access setSampleDb end..!");
+		return "/sample/sample_db_get";
+	}
 }
