@@ -40,12 +40,12 @@ public class DbSampleController {
 	 */
 	@RequestMapping(value = "/dbaccess", method = RequestMethod.GET)
 	public String sampleDbAccess(Model model) {
-		logger.info("DB Access Sample start..!");
+		logger.info("dbaccess start..!");
 
 		List<SampleTable> resultList = this.dbSampleService.getDbSampleTable();
 		model.addAttribute("resultList", resultList);
 
-		logger.info("DB Access Sample end..!");
+		logger.info("dbaccess end..!");
 		return "/sample/sample_db_get";
 	}
 
@@ -58,7 +58,7 @@ public class DbSampleController {
 	 */
 	@RequestMapping(value = "/setSampleDb", method = RequestMethod.POST)
 	public String setSampleDb(@ModelAttribute SampleDto dto, Model model) {
-		logger.info("DB Access setSampleDb start..!");
+		logger.info("setSampleDb start..!");
 		SampleTable entity = new SampleTable();
 
 		// DTOから取得のデータをEntityにコピー
@@ -70,7 +70,7 @@ public class DbSampleController {
 		List<SampleTable> resultList = this.dbSampleService.getDbSampleTable();
 		model.addAttribute("resultList", resultList);
 
-		logger.info("DB Access setSampleDb end..!");
+		logger.info("setSampleDb end..!");
 		return "/sample/sample_db_get";
 	}
 
@@ -82,12 +82,12 @@ public class DbSampleController {
 	 */
 	@RequestMapping(value = "/getDbSampleOnNativeQuery", method = RequestMethod.POST)
 	public String getDbSampleOnNativeQuery(@ModelAttribute SampleDto dto, Model model) {
-		logger.info("DB Access setSampleDb start..!");
+		logger.info("getDbSampleOnNativeQuery start..!");
 		// データの再取得
 		SampleTable result = this.dbSampleService.getDbSampleOnNativeQuery(dto.getId());
 		model.addAttribute("result", result);
 
-		logger.info("DB Access setSampleDb end..!");
+		logger.info("getDbSampleOnNativeQuery end..!");
 		return "/sample/sample_db_get";
 	}
 }

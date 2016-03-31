@@ -26,7 +26,7 @@ public class DbSampleService {
 	private SampleTableRepository sampleTableRepository;
 
 	@PersistenceContext
-	public EntityManager em;
+	public EntityManager entityManager;
 
 	/**
 	 * 「sample_table」テーブルからデータ取得
@@ -53,7 +53,7 @@ public class DbSampleService {
 	 * @return 取得データ
 	 */
 	public SampleTable getDbSampleOnNativeQuery(String id) {
-		Query nq = em.createNativeQuery("SELECT * FROM sample_table WHERE id = :id", SampleTable.class);
+		Query nq = entityManager.createNativeQuery("SELECT * FROM sample_table WHERE id = :id", SampleTable.class);
 		nq.setParameter("id", id);
 		return (SampleTable) nq.getSingleResult();
 	}
