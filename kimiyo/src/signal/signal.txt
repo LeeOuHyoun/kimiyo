@@ -11,6 +11,9 @@
 ・interface
 ・jQuery ajax
 ・Spring Pageable
+・Thymeleaf
+・
+・
 ・
 ===============================================================
 -JSON Editor Online
@@ -30,9 +33,10 @@
 -Spring Pageable
 ・http://bluelivesky.blog.me/220629546864
 ===============================================================
--
-・
+-Spring + Hibernate JPA + Thymeleaf Pagination
+・http://storyofdream.tistory.com/133
 ===============================================================
--
-・
+-Thymeleaf
+・http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf_ja.html
+・http://millky.com/@origoni/post/1144?language=ko_kr
 ===============================================================
