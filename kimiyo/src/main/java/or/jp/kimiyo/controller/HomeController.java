@@ -1,4 +1,4 @@
-package or.jp.kimiyo;
+package or.jp.kimiyo.controller;
 
 import java.util.Date;
 
@@ -27,7 +27,7 @@ public class HomeController {
 		Date date = new Date();
 		model.addAttribute("serverTime", date );
 
-		return "home";
+		return "index";
 	}
 
 }

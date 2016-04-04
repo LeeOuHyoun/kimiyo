@@ -2,11 +2,11 @@ package or.jp.kimiyo.service;
 
 import java.util.List;
 
-import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import or.jp.kimiyo.entity.SampleTable;
@@ -22,7 +22,7 @@ import or.jp.kimiyo.repository.SampleTableRepository;
 public class DbSampleService {
 
 	/** sample Repository */
-	@Inject
+	@Autowired
 	private SampleTableRepository sampleTableRepository;
 
 	@PersistenceContext
