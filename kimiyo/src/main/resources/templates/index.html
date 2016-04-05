@@ -1,29 +1,362 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
-	<title>Hello Spring Boot!</title>
-    <script src="../static/js/common/jquery-2.2.1.js" th:src="@{/js/common/jquery-2.2.1.js}"></script>
+	<title>Beauty salon | responsive bootstrap3 html5 template</title>
+
+	<!-- CSS STYLES -->
+	<link rel="shortcut icon" href="../images/favicon.ico" th:href="@{/images/favicon.ico}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../css/bootstrap-theme.min.css" th:href="@{/css/bootstrap-theme.min.css}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../css/prettyPhoto.css" th:href="@{/css/prettyPhoto.css}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../css/flexslider.css" th:href="@{/css/flexslider.css}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../css/animate.css" th:href="@{/css/animate.css}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../css/style.css" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../css/colors/" th:href="@{css/colors/}" id="colors"/>
+
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css' 
+	th:href="@{Lato}" />
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'
+	th:href="@{Cookie}" />
+	
+    <!-- SCRIPTS -->
+	<script src="../static/js/jquery-2.2.1.js" th:src="@{/js/jquery-2.2.1.js}"></script>
+	<script src="../static/js/bootstrap.min.js" type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+	<script src="../static/js/jquery.prettyPhoto.js" type="text/javascript" th:src="@{/js/jquery.prettyPhoto.js}"></script>
+	<script src="../static/js/jquery-ui.min.js" type="text/javascript" th:src="@{/js/jquery-ui.min.js}"></script>
+	<script src="../static/js/superfish.min.js" type="text/javascript" th:src="@{/js/superfish.min.js}"></script>
+	<script src="../static/js/jquery.flexslider-min.js" type="text/javascript" th:src="@{/js/jquery.flexslider-min.js}"></script>
+	<script src="../static/js/animate.js" type="text/javascript" th:src="@{/js/animate.js}"></script>
+
 	<script type="text/javascript">
 		$(function(){
-			// alert('test');
+			//alert('test');
 		});
 	</script>
-</head>
 
+</head>
 <body>
-<!-- Header -->
-<div th:replace="fragments/header :: header"></div>
-<div class="container">
-    <div class="hero-unit">
-        <h1>Hello World..!! 日本語</h1>
-        <p>
-            <a href="#" th:href="@{/sample/dbaccess}" class="btn btn-large btn-success">get DB</a>
-        </p>
-    </div>
-</div>
-    <footer>
-        <div th:replace="fragments/footer :: footer">&copy; 2016 or.jp.kimiyo</div>
-    </footer>
+
+<!-- PRELOADER -->
+	<!-- <img id="preloader" src="../images/preloader.gif" th:src="@{../images/preloader.gif}" alt="" /> -->
+<!-- //PRELOADER -->
+	
+	<!-- PAGE -->
+	<div id="page">
+		<!-- CONTAINER -->
+		<div class="container page_block">
+			
+			<!-- WRAPPER -->
+			<div class="wrapper">
+				<!-- HEADER -->
+				<header>
+						
+					<!-- MENU -->
+					<div class="menu_block clearfix">
+						
+						<!-- LOGO -->
+						<div class="pull-left logo">
+							<a href="index.html" alt="">Beauty salon</a>
+						</div><!-- LOGO -->
+						
+						<!-- RESPONSIVE BUTTON MENU -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="glyphicon glyphicon-align-justify"></span>
+							</button>
+						</div><!-- //RESPONSIVE BUTTON MENU -->
+						
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav right">
+								<li class="first active"><a href="index.html" title="">Home</a></li>
+								<li class="sub-menu"><a href="javascript:void(0);" title="">Features</a>
+									<!-- Mega Menu -->
+									<ul class="mega_menu left">
+										<h4>Two columns and paragraph</h4>
+										<li class="col">
+											<h5>Page Layouts</h5>
+											<ol>
+												<li><a href="typography.html"><span>-</span>Typography</a></li>
+												<li><a href="shortcodes.html"><span>-</span>Shortcodes</a></li>
+												<li><a href="full-width.html"><span>-</span>Full Width</a></li>
+											</ol>
+										</li>
+										<li class="col">
+											<h5>Other Pages</h5>
+											<ol>
+												<li><a href="404.html"><span>-</span>404 Page</a></li>
+												<li><a href="shop.html"><span>-</span>Shop</a></li>
+												<li><a href="product-page.html"><span>-</span>Product Page</a></li>
+											</ol>
+										</li>
+										<li class="col">
+											<h5>Paragraph</h5>
+											<p>This <span class="color_text">Mega Menu</span> can handle everything. Lists, paragraphs, forms...</p>
+										</li>
+										<div class="clear"></div>
+									</ul><!-- //Mega Menu -->
+								</li>
+								<li class="sub-menu"><a href="javascript:void(0);" title="">Pages</a>
+									<ul>
+										<li><a href="about.html"><span>-</span>About</a></li>
+										<li><a href="shop.html"><span>-</span>Shop</a></li>
+										<li><a href="product-page.html"><span>-</span>Product Page</a></li>
+										<li><a href="full-width.html"><span>-</span>Full Width</a></li>
+										<li><a href="404.html"><span>-</span>404 Page</a></li>
+									</ul>
+								</li>
+								<li class="sub-menu"><a href="javascript:void(0);" title="">Portfolio</a>
+									<ul>
+										<li><a href="portfolio1.html"><span>-</span>1 Column</a></li>
+										<li><a href="portfolio2.html"><span>-</span>2 Column</a></li>
+										<li><a href="portfolio3.html"><span>-</span>3 Column</a></li>
+										<li><a href="portfolio4.html"><span>-</span>4 Column</a></li>
+										<li><a href="portfolio-post.html"><span>-</span>Portfolio Post</a></li>
+									</ul>
+								</li>
+								<li class="sub-menu"><a href="javascript:void(0);" title="">Blog</a>
+									<ul>
+										<li><a href="blog.html"><span>-</span>Blog with sidebar</a></li>
+										<li><a href="blog-post.html"><span>-</span>Blog Post</a></li>
+									</ul>
+								</li>
+								<li class="last"><a href="contacts.html" title="">Contacts</a></li>
+							</ul>
+						</div>
+					</div><!-- //MENU -->
+				</header><!-- //HEADER -->
+				
+				<!-- SLIDER -->
+				<div class="slider_block full_width margbot65">
+					<div class="flexslider top_slider">
+						<ul class="slides">
+							<li class="slide1">
+								<img src="../images/slider/slide1_bg.jpg" th:src="@{../images/slider/slide1_bg.jpg}" />
+								<div class="flex_caption1">
+									<p class="FromLeft">Cras pulvinar <span class="color_text">tortor vel augue</span> consequat</p><br/>
+									<p class="FromLeft captionDelay1">Sed vehicula, dolor sit amet</p>
+								</div>
+								<div class="FromRight captionDelay4 flex_caption2"></div>
+							</li>
+							<li class="slide2">
+								<img src="../images/slider/slide2_bg.jpg" th:src="@{../images/slider/slide2_bg.jpg}" />
+								<div class="flex_caption1">
+									<p class="FromTop color_bg">Say Something Wonderful Here</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div><!-- //SLIDER -->
+
+				
+				<!-- RECENT PROJECTS -->
+				<section class="projects_block" data-animated="fadeInUp">
+					<h2>Recent Projects</h2>
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 margbot60">
+							<div class="project_item">
+								<div class="hover_img"><img src="../images/projects/1.jpg" th:src="@{../images/projects/1.jpg}" alt="" /></div>
+								<div class="proj_descr center">
+									<div class="proj_descr_content">
+										<a href="portfolio-post.html" alt="">Integer magna enim</a>
+										<span>Cras sit amet mauris ut ipsum facilisis</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 margbot60">
+							<div class="project_item">
+								<div class="hover_img"><img src="../images/projects/2.jpg" th:src="@{../images/projects/2.jpg}" alt="" /></div>
+								<div class="proj_descr center">
+									<div class="proj_descr_content">
+										<a href="portfolio-post.html" alt="">Integer magna enim</a>
+										<span>Cras sit amet mauris ut ipsum facilisis</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 margbot60">
+							<div class="project_item">
+								<div class="hover_img"><img th:src="@{../images/projects/3.jpg}" alt="" /></div>
+								<div class="proj_descr center">
+									<div class="proj_descr_content">
+										<a href="portfolio-post.html" alt="">Integer magna enim</a>
+										<span>Cras sit amet mauris ut ipsum facilisis</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 margbot60">
+							<div class="project_item">
+								<div class="hover_img"><img th:src="@{../images/projects/4.jpg}" alt="" /></div>
+								<div class="proj_descr center">
+									<div class="proj_descr_content">
+										<a href="portfolio-post.html" alt="">Integer magna enim</a>
+										<span>Cras sit amet mauris ut ipsum facilisis</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- //PROJECTS -->
+				
+				
+				<!-- SERVICES -->
+				<section class="services_block">
+					
+					<!-- ROW -->
+					<div class="row" data-animated="fadeInUp">
+					
+						<!-- SERVIECS LIST -->
+						<div class="col-lg-6 col-md-6 services_list">
+							
+							<!-- ROW -->
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-ss-12 padbot40">
+									<a class="service_item" href="javascript:void(0);" alt="">
+										<i class="i1"></i><p>Spa and Relaxing</p>
+										<div class="clear"></div>
+										<span>Ut leo nisi, dignissim eu viverra ut, condimentum vitae nulla. Donec scelerisque mollis pulvinar. Sed semper porttitor viverra. Ut eget libero</span>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-ss-12 padbot40">
+									<a class="service_item" href="javascript:void(0);" alt="">
+										<i class="i2"></i><p>Nail Treatments</p>
+										<div class="clear"></div>
+										<span>Cras sit amet mauris ut ipsum facilisis tincidunt ac non lectus. Ut tincidunt, dui vitae molestie vehicula, nisi diam convallis neque, vel bibendum augue ante</span>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-ss-12 padbot40">
+									<a class="service_item" href="javascript:void(0);" alt="">
+										<i class="i3"></i><p>Cutting and Styling</p>
+										<div class="clear"></div>
+										<span>Fusce accumsan scelerisque orci, id posuere nulla laoreet sed. Nam et nisl ut libero tincidunt dapibus et tempor sem. Mauris et mauris sit amet leo bibendum</span>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-ss-12 padbot40">
+									<a class="service_item" href="javascript:void(0);" alt="">
+										<i class="i4"></i><p>Make Up</p>
+										<div class="clear"></div>
+										<span>Integer magna enim, aliquet eget orci id, pulvinar pretium nulla. Mauris eget diam iaculis erat ultricies interdum sed nec enim. Duis sed diam est. Vivamus aliquet</span>
+									</a>
+								</div>
+							</div><!-- //ROW -->
+						</div><!-- SERVIECS LIST -->
+						
+						<!-- VIDEO -->
+						<div class="col-lg-6 col-md-6 padbot30 services_video">
+						</div><!-- //VIDEO -->
+					</div><!-- //ROW -->
+				</section><!-- //SERVICES -->
+				
+				
+				<!-- LATEST NEWS -->
+				<section class="news_block padbot30" data-animated="fadeInUp">
+					<h2>Latest News</h2>
+
+					<!-- JCAROUSEL -->
+					<div class="jcarousel-wrapper">
+						
+						<!-- PAGINATION -->
+						<div class="jCarousel_pagination">
+							<a href="#" class="jcarousel-control-prev"></a>
+							<a href="#" class="jcarousel-control-next"></a>
+						</div><!-- //PAGINATION -->
+						
+						<div class="jcarousel">
+							<ul class="clearfix">
+								<li>
+									<!-- NEWS ITEM -->
+									<div class="latest_news_item clearfix">
+										<a class="pull-left recent_post" href="blog-post.html" alt=""><img th:src="@{../images/blog/1.jpg}" alt="" /></a>
+										<div class="news_content">
+											<div class="recent_post_inf">February 14, 2020</div>
+											<a class="recent_post_title" href="blog-post.html" alt="">Vivamus mollis nec nunc ac varius</a>
+											<div class="recent_post_txt">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vehicula orci eget justo sagittis, in sagittis lorem ullamcorper.</div>
+										</div>
+									</div><!-- //NEWS ITEM -->
+								</li>
+								<li>
+									<!-- NEWS ITEM -->
+									<div class="latest_news_item clearfix">
+										<a class="pull-left recent_post" href="blog-post.html" alt=""><img th:src="@{../images/blog/2.jpg}" alt="" /></a>
+										<div class="news_content">
+											<div class="recent_post_inf">February 14, 2020</div>
+											<a class="recent_post_title" href="blog-post.html" alt="">Vivamus mollis nec nunc ac varius</a>
+											<div class="recent_post_txt">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vehicula orci eget justo sagittis, in sagittis lorem ullamcorper.</div>
+										</div>
+									</div><!-- //NEWS ITEM -->
+								</li>
+								<li>
+									<!-- NEWS ITEM -->
+									<div class="latest_news_item clearfix">
+										<a class="pull-left recent_post" href="blog-post.html" alt=""><img th:src="@{../images/blog/3.jpg}" alt="" /></a>
+										<div class="news_content">
+											<div class="recent_post_inf">February 14, 2020</div>
+											<a class="recent_post_title" href="blog-post.html" alt="">Vivamus mollis nec nunc ac varius</a>
+											<div class="recent_post_txt">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vehicula orci eget justo sagittis, in sagittis lorem ullamcorper.</div>
+										</div>
+									</div><!-- //NEWS ITEM -->
+								</li>
+							</ul>
+						</div>
+					</div><!-- //JCAROUSEL -->
+				</section><!-- //LATEST NEWS -->
+
+				<!-- FOOTER -->
+				<footer class="full_width footer_block">
+					<div class="row" data-animated="fadeInUp">
+						<div class="col-lg-4 col-sm-4 padbot20">
+							<h2>Get in touch</h2>
+							<p>Duis fringilla nibh at aliquam dignissim. Nulla erat nulla, dignissim et volutpat sit amet, placerat placerat tortor. Integer felis orci, ornare non congue ut, iaculis non diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris molestie in elit id iaculis. Nulla tristique mauris sem, id iaculis</p>
+							<ul class="contact_info">
+								<li>1 Iron Bridge House 1Bridge Approach London NW1</li>
+								<li><span>Email:</span><a href="mailto:useful@sitename.com" alt=""> useful@sitename.com</a></li>
+								<li><span>Phone:</span> +1 959 603 6035</li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-sm-4">
+							<h2>Events</h2>
+							<div class="latest_news_item clearfix">
+								<a class="pull-left recent_post" href="blog-post.html" alt=""><img th:src="@{../images/blog/1.jpg}" alt="" /></a>
+								<div class="news_content">
+									<a class="recent_post_title" href="blog-post.html" alt="">Sed a condimentum eros.</a>
+									<ul class="recent_post_inf">
+										<li>20/08/13</li>
+									</ul>
+									<div class="recent_post_txt">Duis fringilla nibh at aliquam dignissim. Nulla erat nulla, dignissim et volutpat</div>
+								</div>
+							</div>
+							<div class="latest_news_item clearfix">
+								<a class="pull-left recent_post" href="blog-post.html" alt=""><img th:src="@{../images/blog/2.jpg}" alt="" /></a>
+								<div class="news_content">
+									<a class="recent_post_title" href="blog-post.html" alt="">Sed a condimentum eros.</a>
+									<ul class="recent_post_inf">
+										<li>20/08/13</li>
+									</ul>
+									<div class="recent_post_txt">Duis fringilla nibh at aliquam dignissim. Nulla erat nulla, dignissim et volutpat</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-4">
+							<h2>Flickr</h2>
+							
+							<!-- FLOCKR -->
+							<div class="flickrs">
+								<div class="FlickrImages clearfix">
+									<ul></ul>
+								</div>
+							</div><!-- //FLOCKR -->
+						</div>
+					</div>
+				</footer><!-- //FOOTER -->
+				
+				<!-- COPYRIGHT -->
+				<div class="full_width copyright clearfix">
+					<a class="copyright_logo" href="javascript:void(0);">BEAUTY SALON</a> <span> &copy; Copyright 2020</span>
+				</div><!-- //COPYRIGHT -->
+			</div><!-- WRAPPER -->
+		</div><!-- //CONTAINER -->
+	</div><!-- //PAGE -->
 </body>
 </html>

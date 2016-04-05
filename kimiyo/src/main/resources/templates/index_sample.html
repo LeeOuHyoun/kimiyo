@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Hello Spring Boot!</title>
+    <script src="../static/js/common/jquery-2.2.1.js" th:src="@{/js/common/jquery-2.2.1.js}"></script>
+	<script type="text/javascript">
+		$(function(){
+			// alert('test');
+		});
+	</script>
+</head>
+
+<body>
+<!-- Header -->
+<div th:replace="fragments/header :: header"></div>
+<div class="container">
+    <div class="hero-unit">
+        <h1>Hello World..!! 日本語</h1>
+        <p>
+            <a href="#" th:href="@{/sample/dbaccess}" class="btn btn-large btn-success">get DB</a>
+        </p>
+    </div>
+</div>
+    <footer>
+        <div th:replace="fragments/footer :: footer">&copy; 2016 or.jp.kimiyo</div>
+    </footer>
+</body>
+</html>
