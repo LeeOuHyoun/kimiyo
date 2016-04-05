@@ -51,8 +51,8 @@
 -sb-admin2
 ・http://startbootstrap.com/template-overviews/sb-admin-2/
 ===============================================================
--
-・
+-json ex
+・@RequestMapping(value = "/master/position", produces = {"application/json; charset=UTF-8"}, method = RequestMethod.POST)
 ===============================================================
 -
 ・
