@@ -44,11 +44,12 @@
 -
 ・public abstract class AbstractBaseController
 ===============================================================
--
-・
+-※spring boot自動生成プロジェクト
+・http://tmondev.blog.me/220596351807
+・http://start.spring.io/
 ===============================================================
--
-・
+-sb-admin2
+・http://startbootstrap.com/template-overviews/sb-admin-2/
 ===============================================================
 -
 ・
