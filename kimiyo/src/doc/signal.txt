@@ -54,8 +54,8 @@
 -json ex
 ・@RequestMapping(value = "/master/position", produces = {"application/json; charset=UTF-8"}, method = RequestMethod.POST)
 ===============================================================
--
-・
+-Thymeleaf Layout Dialect
+・https://blog.outsider.ne.kr/1004
 ===============================================================
 -
 ・
