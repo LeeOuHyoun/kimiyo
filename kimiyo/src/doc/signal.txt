@@ -54,11 +54,25 @@
 -json ex
 ・@RequestMapping(value = "/master/position", produces = {"application/json; charset=UTF-8"}, method = RequestMethod.POST)
 ===============================================================
--
-・
+-Thymeleaf Layout Dialect
+・https://blog.outsider.ne.kr/1004
+※※※============================================================
+-Spring & java Transaction - blog
+・https://blog.outsider.ne.kr/869
+・http://springmvc.egloos.com/495798
+-왜 service 개발시 항상 impl 인터페이스를 만드나요?
+・http://okky.kr/article/259740
+※CGLIB
+・http://javacan.tistory.com/104
+・http://cafe.naver.com/tanosimisekai/1426
+・http://muimi.com/j/aop/cglib/
+・http://kin.naver.com/qna/detail.nhn?d1id=1&dirId=1040201&docId=181996853&qb=Y2dsaWI=&enc=utf8&section=kin&rank=2&search_sort=0&spq=0&pid=SxETrdoRR2KssaYymPZsssssssC-349890&sid=hJ12u/sgWKHiVpQDVlJNLQ%3D%3D
 ===============================================================
--
-・
+-簡易AOPフレームワークの作成
+・http://d.hatena.ne.jp/iad_otomamay/20100418/1271560826
+===============================================================
+-When does your Spring @Transactional attribute apply on CgLib proxies
+・http://blog.novoj.net/2010/08/10/when-does-your-spring-transactional-attribute-apply-on-cglib-proxies/
 ===============================================================
 -
 ・
