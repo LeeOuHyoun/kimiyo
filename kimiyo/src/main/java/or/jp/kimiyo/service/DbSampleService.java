@@ -13,7 +13,7 @@ import or.jp.kimiyo.entity.SampleTable;
 import or.jp.kimiyo.repository.SampleTableRepository;
 
 /**
- * 「sample類table」テーブルからデータ取得
+ * 「sample類table」テーブルからデータ取得 test
  *
  * @author olee
  *
